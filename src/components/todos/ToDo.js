@@ -19,7 +19,7 @@ const ToDo = (props) => {
     return (
         <div className="todos" style={props.todo.completed ? completed : notcompleted }>
             <p>
-                <span style={{marginRight: "10px"}}>
+                <span className="TodoStatus" >
                     {props.todo.completed && <CheckCircleIcon style={{ color: green[500] }} /> }  
                     {!props.todo.completed && <CachedIcon style={{ color: red[500] }} />} 
                 </span>

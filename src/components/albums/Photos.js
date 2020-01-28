@@ -62,21 +62,23 @@ class Photos extends Component {
                 <div className={root}>
                 <GridList cellHeight={180} className={gridList}>
                     <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-                    <ListSubheader component="div"><h3>Album Title: {this.props.album.title}</h3></ListSubheader>
+                        <ListSubheader component="div">
+                            <h3>Album Title: {this.props.album.title}</h3>
+                        </ListSubheader>
                     </GridListTile>
                     {this.props.photos && this.props.photos.map(tile => (
-                    <GridListTile key={tile.id}>
-                        <img src={tile.url} alt={tile.title} />
-                        <GridListTileBar
-                        title={tile.title}
-                        subtitle={""}
-                        actionIcon={
-                            <IconButton aria-label={`info about ${tile.title}`} className={icon}>
-                            <InfoIcon />
-                            </IconButton>
-                        }
-                        />
-                    </GridListTile>
+                        <GridListTile key={tile.id}>
+                            <img src={tile.url} alt={tile.title} />
+                            <GridListTileBar
+                            title={tile.title}
+                            subtitle={""}
+                            actionIcon={
+                                <IconButton aria-label={`info about ${tile.title}`} className={icon}>
+                                <InfoIcon />
+                                </IconButton>
+                            }
+                            />
+                        </GridListTile>
                     ))}
                 </GridList>
                 </div>

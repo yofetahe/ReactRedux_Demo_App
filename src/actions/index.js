@@ -65,13 +65,13 @@ export const FetchToDos = () => async dispatch => {
 }
 
 export const ToDoDone = (todo, todos) => dispatch => {
-    console.log(todo)
+    
     todo.completed = true;
-    console.log(todo);
+    
     const filteredTodos = todos.filter(t => t.id !== todo.id);
-    console.log(filteredTodos);
+    
     const updatedTodo = [...filteredTodos, todo];
-    console.log(updatedTodo.sort());
+    //sort need to be updated
     dispatch({
         type: "TODOS",
         payload: updatedTodo.sort((a, b) => a.userId > b.userId)

@@ -26,7 +26,7 @@ const Album = (props) => {
         <Grid item xs={3}>
           <Paper className={classes.paper}> 
             <Link to={`/albums/${props.album.id}`} style={{textDecoration: "none"}}> 
-                <PhotoLibraryIcon /><br/>{props.album.title} 
+                <PhotoLibraryIcon style={{ fontSize: 50 }} /><br/>{props.album.title} 
             </Link>
           </Paper>
         </Grid>
