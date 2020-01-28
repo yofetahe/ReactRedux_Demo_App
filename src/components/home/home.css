@@ -1,0 +1,16 @@
+.category {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(235, 231, 231, 0.5);
+    padding: 30px;
+    /* display: inline;   */
+    margin-bottom: 10px;
+}
+
+.categoryText {
+    font-variant: small-caps;
+    text-decoration: none;
+    color: rgb(7, 55, 77);
+    font-size: larger;
+    vertical-align: top;
+}
